@@ -20,13 +20,15 @@ const Chats = () => {
       <div>
         <h2 className='flex items-center justify-center text-4xl font-bold mb-5'>Chats</h2>
 
-        {message?.map((m, index) => (
-          <div 
-            key={index}
-            className='bg-gray-900 border-2 border-white rounded-2xl px-4 py-3 text-white shadow-lg'>
-            {m}
-          </div>
-        ))}
+        <div className='flex-1 overflow-y-auto space-y-3 p-3'>
+          {message?.map((m, index) => (
+            <div 
+              key={index}
+              className='bg-gray-900 border-2 border-white rounded-2xl px-4 py-3 text-white shadow-lg'>
+              {m}
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )
