@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { socket } from '../socket'
+import { socket } from './socket'
 import ManageConnection from './components/ManageConnection'
 import MyForm from './components/MyForm'
 import Chats from './components/Chats'
