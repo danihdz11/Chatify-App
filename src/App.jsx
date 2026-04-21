@@ -28,19 +28,19 @@ function App() {
         <div className='flex items-center justify-center'>
           <ManageConnection />
         </div>
-        <div className='flex items-center justify-between mt-10 w-full'>
-          <div className='w-1/4 h-screen border-3 border-white'>
+        <div className='flex items-center justify-between mt-10 w-full gap-x-4 p-6'>
+          <div className='w-1/4 h-screen border-3 border-white rounded-3xl bg-gray-900'>
             <Channels />
           </div>
 
-          <div className='flex flex-col w-1/2 h-screen border-y-3 border-y-white'>
+          <div className='flex flex-col w-1/2 h-screen border-3 border-white rounded-3xl bg-gray-900'>
             <div className='flex-1 overflow-y-auto'>
               <Chats />
             </div>
             <MyForm />
           </div>
 
-          <div className='w-1/4 h-screen border-3 border-white'>
+          <div className='w-1/4 h-screen border-3 border-white rounded-3xl bg-gray-900'>
             <Users />
           </div>
   
